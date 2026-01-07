@@ -20,7 +20,7 @@ module "azure_virt_network" {
       cidrs                           = [var.public_subnet_cidr]
       allow_vnet_inbound              = true
       allow_vnet_outbound             = true
-      default_outbound_access_enabled = false
+      default_outbound_access_enabled = true
       route_table_association         = "default"
     }
     "t-private-sn-dev" = {
